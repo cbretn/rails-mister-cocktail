@@ -1,7 +1,9 @@
-<h1>Cocktails#index</h1>
-<p>Find me in app/views/cocktails/index.html.erb</p>
-<%= link_to "add cocktail", new_cocktail_path %>
-
+<h1>Life is too short for wheatgrass shots</h1>
+<p>Let me fix you a drink!</p>
+<%= link_to new_cocktail_path do %>
+<i class="fas fa-plus-square"> add cocktail</i>
+<% end %>
+<br><br>
 <div class="cocktail-container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>

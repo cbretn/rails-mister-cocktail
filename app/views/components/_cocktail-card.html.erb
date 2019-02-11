@@ -7,10 +7,14 @@
     <div class="cocktail-bottom">
       <div class="cocktail-links">
         <%= link_to cocktail_path(cocktail) do %>
-          <h6 class="cocktail-link">See</h6>
+          <h6 class="cocktail-link"><p><i class="fas fa-eye"></i></p></h6>
         <% end %>
-        <h6 class="cocktail-link">Edit</h6>
-        <h6 class="cocktail-link">Delete</h6>
+        <%= link_to edit_cocktail_path(cocktail) do %>
+        <h6 class="cocktail-link"><p><i class="fas fa-edit"></i></p></h6>
+        <% end %>
+        <%= link_to cocktail_path(cocktail), method: :delete do %>
+        <h6 class="cocktail-link"><p><i class="fas fa-trash-alt"></i></p></h6>
+        <% end %>
       </div>
     </div>
   </div>

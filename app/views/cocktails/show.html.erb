@@ -1,6 +1,13 @@
+<%= link_to cocktails_path do %>
+  <i class="fas fa-caret-square-left"> back to all</i>
+<% end %>
 <h1><%= @cocktail.name %></h1>
-<ul>
-  <% @cocktail.doses.each do |dose| %>
-  <li><%= dose.description %> of <%= dose.ingredient %></li>
+<ul class="doses-list">
+  <% @doses.each do |dose| %>
+  <li><%= dose.description %> of <%= dose.ingredient.name %></li>
   <% end %>
 </ul>
+<br><br><br>
+
+<h3>Add dose</h3>
+<%= render "./components/dose-form", dose: @dose %>
