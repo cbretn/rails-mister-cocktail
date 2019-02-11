@@ -11,3 +11,14 @@
 
 <h3>Add dose</h3>
 <%= render "./components/dose-form", dose: @dose %>
+
+<ul class="doses-list">
+  <% @reviews.each do |review| %>
+      <li> <%= render "./components/review-card", review: review %> </li>
+  <% end %>
+</ul>
+<br><br><br>
+
+<h3>Add review</h3>
+<%= render "./components/review-form", dose: @dose %>
+

@@ -10,7 +10,7 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    @cocktail = Cocktail.find(params[:id])
+    @cocktail = Cocktail.find(params[:cocktail_id])
     @review = Review.new(review_params)
     @review.cocktail = @cocktail
     if @review.save
@@ -47,26 +47,5 @@ class ReviewsController < ApplicationController
 
   def review_params
     params.require(:review).permit(:content, :rating)
-  end
-
-  def index
-  end
-
-  def new
-  end
-
-  def create
-  end
-
-  def show
-  end
-
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
   end
 end

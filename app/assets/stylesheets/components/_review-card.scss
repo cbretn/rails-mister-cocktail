@@ -1,0 +1,49 @@
+.review_card_container {
+  a:hover {
+    text-decoration: none !important;
+  }
+}
+
+.review_card {
+  border: 1px #d3d3d3 solid;
+  background-color: white;
+  // margin: 15px;
+  height: 250px;
+  padding: 10px 40px;
+}
+
+.review_card h3 {
+  text-align: center;
+}
+
+.review_card p {
+  color: #a9a9a9;
+  // margin-left: 20%;
+  position: relative;
+}
+
+#edit {
+  position: absolute;
+  bottom: 10px;
+  left: 90px;
+  color: white;
+  background-color: orange;
+}
+
+#delete {
+  position: absolute;
+  bottom: 10px;
+  left: 270px;
+  color: white;
+  background-color: #a9a9a9;
+}
+
+
+.review_card_container .row {
+  // display: flex;
+  margin-top: 10px;
+}
+
+a:hover {
+  text-decoration: none;
+}
