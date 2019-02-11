@@ -1,0 +1,17 @@
+<div class="col-xs-6 col-md-4">
+  <div class='cocktail-card'>
+    <div class="cocktail-head">
+      <h3><%= cocktail.name %></h3>
+    </div>
+    <hr id='glass-line'>
+    <div class="cocktail-bottom">
+      <div class="cocktail-links">
+        <%= link_to cocktail_path(cocktail) do %>
+          <h6 class="cocktail-link">See</h6>
+        <% end %>
+        <h6 class="cocktail-link">Edit</h6>
+        <h6 class="cocktail-link">Delete</h6>
+      </div>
+    </div>
+  </div>
+</div>

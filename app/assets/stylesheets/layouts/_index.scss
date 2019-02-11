@@ -3,3 +3,16 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+#bubbles-wrapper {
+  background-image: asset-url('bubbles.jpg');
+  background-size: cover,
+}
+
+.darken-overlay {
+  // position: relative;
+  // left: 0px;
+  // top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.30);
+}
