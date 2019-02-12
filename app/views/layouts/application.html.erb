@@ -13,9 +13,11 @@
 
   <body>
 
+
     <div class="wrapper" id="bubbles-wrapper">
       <div class="darken-overlay">
-        <div class="container">
+        <%= render "./components/navbar" %>
+        <div class="container" id="main-container">
           <%= yield %>
         </div>
       </div>

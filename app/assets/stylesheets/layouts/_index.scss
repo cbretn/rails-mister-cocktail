@@ -16,7 +16,7 @@ a {
 #bubbles-wrapper {
   background-image: asset-url('bubbles.jpg');
   background-size: cover;
-  height: 100vh;
+  height: cover;
 }
 
 .darken-overlay {
@@ -31,3 +31,7 @@ a {
 h1 {
   text-align: center;
 }
+
+// #main-container {
+//   padding-top: 120px;
+// }
