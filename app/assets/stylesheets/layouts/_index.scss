@@ -17,6 +17,7 @@ a {
   background-image: asset-url('bubbles.jpg');
   background-size: cover;
   height: cover;
+  min-height: 100vh;
 }
 
 .darken-overlay {
