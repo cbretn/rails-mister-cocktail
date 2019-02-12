@@ -1,15 +1,19 @@
 .review_card_container {
-  a:hover {
-    text-decoration: none !important;
-  }
+  list-style: none;
 }
 
 .review_card {
   border: 1px #d3d3d3 solid;
   background-color: white;
   // margin: 15px;
-  height: 250px;
+  height: 100px;
   padding: 10px 40px;
+}
+
+.review_card_container > li {
+  color: grey;
+  text-align: center;
+  list-style-type: none;
 }
 
 .review_card h3 {
@@ -36,6 +40,7 @@
   left: 270px;
   color: white;
   background-color: #a9a9a9;
+  font-size: 12px;
 }
 
 

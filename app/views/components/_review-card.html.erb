@@ -6,7 +6,7 @@
     <% (5 - review.rating.to_i).times do %>
     <i class="far fa-star"></i>
     <% end %>
-    <br><br>
+    <br>
     <p><%= review.content %></p>
     <%= link_to review_path(review), method: :delete do %>
     <button id="delete"><i class="fas fa-trash-alt"></i> Delete</button>
