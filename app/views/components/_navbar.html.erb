@@ -1,10 +1,12 @@
 <div class="navbar">
-  <span id="rooster">
-    <%= image_tag 'the-cocktail.png' %>
-  </span>
+  <%= link_to root_path do %>
+    <span id="rooster">
+      <%= image_tag 'the-cocktail.png' %>
+    </span>
   <span id="logo-text">
     <%= image_tag 'text.png' %>
   </span>
+  <% end %>
   <%= link_to new_cocktail_path do %>
   <button id="add-cocktail">
   <i class="fas fa-plus-square"></i> add cocktail

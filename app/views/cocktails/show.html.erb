@@ -6,6 +6,7 @@
   <div class="cocktail-picture text-center">
   <%= cl_image_tag @cocktail.picture, height: 300, width: 400, crop: :fill %>
 </div>
+<br>
 <% end %>
 <ul class="doses-list">
   <% @doses.each do |dose| %>

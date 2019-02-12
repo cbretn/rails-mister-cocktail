@@ -6,6 +6,9 @@
 //
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
+import { typed } from '../components/init_typed';
+
+typed();
 
 console.log('Hello World from Webpacker')
 import 'bootstrap';
@@ -13,8 +16,5 @@ import 'bootstrap';
 // select2
 import 'select2/dist/css/select2.css';
 
-import initSelect2 from '../components/init_select2';
+import { initSelect2 } from '../components/init_select2';
 
-import { typed } from '../components/init_typed';
-
-typed();
