@@ -11,5 +11,5 @@ $(document).ready(function() {
   console.log('hello from select2');
 })
 
-export default { initSelect2 };
+export default initSelect2;
 
